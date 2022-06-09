@@ -1,0 +1,171 @@
+/* 
+    ITC293 Introduction to the Web
+    Matthew Semmens
+    9/04/2022
+*/
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;    
+}
+
+html{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    align-items: center;
+    background-color: #2E4057;
+    margin-top: 50px;
+}
+
+h2,h3{
+    background-color: #F4A259;
+    width: 550px;
+    padding-left: 25px;
+}
+
+table{
+    background-color: #F7BF4F;
+    width: 575px;
+}
+table, th, td {
+    border: 1px solid black;
+}
+
+.exp{
+    background-color: #F7BF4F;
+    width: 550px;
+    padding-left: 25px;
+}
+
+/*This section relates to the Sticked nav bar and banner title*/
+
+#banner_text{
+    top: 0; 
+    height: 50px;
+    text-align: center;
+}
+
+.nav_bar{
+    position: sticky;
+    top:0%;
+    background-color: #F7BF4F;
+    width: 575px;
+    height: 100px;
+}
+
+#left_nav_box{
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+#right_nav_box{
+    float: right;
+    width: 475px;
+    height: 50px;
+}
+
+button {
+    background-color: aquamarine;
+    border: none;
+    color: black;
+    padding: 3px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+    width: 24%;
+}
+button:hover {
+    background-color: azure;
+}
+button:disabled {
+    opacity: 0.5;   
+}
+
+/*Body*/
+.content_body {
+    width: 575px;
+    top: 100px;
+    height:100vh;
+    padding: 25px;
+    background-color: #F7BF4F;
+}
+
+p {
+    text-align: left;
+    width: 525px;
+    padding: 25px;
+    background-color: #F7BF4F;
+}
+
+#content_parts{
+    text-align: center;
+    width: 475px;
+}
+
+figure{
+    width: 575px;
+    align-items: center;
+    background-color: #F7BF4F;
+}
+
+figcaption{
+    background-color: antiquewhite;
+    text-align: right;
+    padding-right: 50px;
+    text-decoration: underline;
+}
+
+footer{
+    width: 575px;
+    background-color:antiquewhite;
+    padding-bottom: 10px;
+}
+
+.footer_text{
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+ /*inline links*/
+a{
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+a:link{
+    color: #F4A259;
+}
+a:visited{
+    color: #C47259;
+}
+a:hover{
+    background-color: #5E7087;
+    color: #E8EEF2;
+}
+
+ul{
+    list-style-type:none;
+    background-color:#F7BF4F;
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+
+/*Print friendly bit*/
+@media print {
+    body {
+        margin: 0;
+        color: #000;
+        background-color: #fff;
+        font-size: 50%;
+    }
+    header, footer, nav, img {
+        display: none;
+    }     
+}
