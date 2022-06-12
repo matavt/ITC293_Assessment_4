@@ -1,0 +1,34 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+form{
+    background-color: blanchedalmond;
+    text-align: left;
+    display: inline block;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.formWrap{
+    display: block;
+    text-align: center;
+}
+
+#formTitle{
+    font-size: 150%;
+    font-style: italic;
+}
+
+#fname, #lname, #email, #comments{
+    background-color:azure;
+}
