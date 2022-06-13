@@ -1,6 +1,21 @@
 #image_gallery{
-    width: 600px;
+    width: 575px;
 }
-img{
-    max-width: 600px;
+img.gallery{
+    margin: 10px;   
+}
+img.gallery:hover{
+    transition: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img.galleryPopup{
+    max-width: 575px;
+    animation-name: zoom;
+    animation-duration: 0.5s;
+}
+ 
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
 }

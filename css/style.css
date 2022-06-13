@@ -66,7 +66,7 @@ button.nav_button:disabled {
     opacity: 0.5;   
 }
 
-h2,h3{
+h2,h3,h4{
     background-color: #F4A259;
     width: 550px;
     padding-left: 25px;
@@ -86,7 +86,6 @@ table, th, td {
     padding-left: 25px;
 }
 
-/*This section relates to the Sticked nav bar and banner title*/
 
 /*Body*/
 .content_body {
@@ -108,6 +107,21 @@ p {
     text-align: center;
     width: 475px;
 }
+
+a{
+    display:inline;
+}
+a:link{
+    color:#5E7087;
+}
+a:visited{
+    color: #5E7087;
+}
+a:hover{
+    background-color: #5E7087;
+    color: #E8EEF2;
+}
+
 
 figure{
     width: 575px;
@@ -139,13 +153,13 @@ a.footLink{
     padding-left: 20px;
     padding-right: 20px;
 }
-a:link{
+a.footLink:link{
     color: #F4A259;
 }
-a:visited{
+a.footLink:visited{
     color: #C47259;
 }
-a:hover{
+a.footLink:hover{
     background-color: #5E7087;
     color: #E8EEF2;
 }
