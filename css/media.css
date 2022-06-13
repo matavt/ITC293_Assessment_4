@@ -1,0 +1,6 @@
+#image_gallery{
+    width: 600px;
+}
+img{
+    max-width: 600px;
+}

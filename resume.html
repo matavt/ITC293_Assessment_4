@@ -14,21 +14,21 @@
     <link rel="icon" type="image/x-icon" href = "./images/matavt-logos.jpeg">
 </head>
 <body>
-    <div class="nav_bar">
+    <div id="nav_bar">
         <div id="left_nav_box">
             <img src="./images/matavt-logos.jpeg" alt="logo" height=100>
         </div>
         <div id="right_nav_box">
             <h1 id="banner_text">Matthew's  Resume</h1>
             <nav>
-                <button type="button" onclick="location.href='./index.html'">Home</button>
-                <button type="button" onclick="location.href='./about_me.html'">AboutMe</button>
-                <button type="button" disabled onclick="location.href='./resume.html'">Resume</button>
-                <button type="button" onclick="location.href='./skills.html'">Skills</button>
+                <button type="button" class="nav_button" onclick="location.href='./index.html'">Home</button>
+                <button type="button" class="nav_button" onclick="location.href='./about_me.html'">AboutMe</button>
+                <button type="button" class="nav_button" disabled onclick="location.href='./resume.html'">Resume</button>
+                <button type="button" class="nav_button" onclick="location.href='./skills.html'">Skills</button>
             </nav>
         </div>
     </div>
-    <main>
+    <main id="content_body">
         <h3>About Me</h3>
         <p>I&#39;m a long term Northern Territory resident with extensive experience across all aspects 
             of the events industry and growing experience in IT systems management. I&#39;ve got experience in marketing, contract negation, submitting tenders and working to budgets. 
@@ -111,10 +111,11 @@
         <hr>
     </main>
     <footer>
-        <span class="footer_text">&copy; Matthew Semmens all content produced by Matthew Semmens or used with permission</span>
-        <a href="tel:0444123456">phone:0444 123 456</a> 
-        <a href="mailto:webmaster@matavt.net">email:Matthew Semmens</a> 
-        <a href="https://www.linkedin.com/in/matthew-semmens-36495244/">Matthew Semmens Linkedin</a>
+        <span class="footer_text">&copy; Matthew Semmens all content produced by Matthew Semmens or used
+             with permission</span>
+        <a href="tel:0444123456" class="footLink">phone:0444 123 456</a> 
+        <a href="mailto:webmaster@matavt.net" class="footLink">email:Matthew Semmens</a> 
+        <a href="https://www.linkedin.com/in/matthew-semmens-36495244/" class="footLink">Matthew Semmens Linkedin</a>
     </footer>
 </body>
 </html>
