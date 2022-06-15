@@ -78,10 +78,6 @@ ul{
 .button:hover {
     background-color: azure;
 }
-.button:active {
-    opacity: 0.5;
-    background-color: #2E4057;
-}
 /*main content window*/
 .main_content{
     order:2;
@@ -144,4 +140,16 @@ a.footLink:visited{
 a.footLink:hover{
     background-color: #5E7087;
     color: #E8EEF2;
+}
+/*Print friendly bit*/
+@media print {
+    body {
+        margin: 0;
+        color: #000;
+        background-color: #fff;
+        font-size: 50%;
+    }
+    header, footer, nav, img {
+        display: none;
+    }     
 }

@@ -1,5 +1,6 @@
 #image_gallery{
-    width: 90%;
+    width: 95%;
+    padding: 5%;
 }
 img.gallery{
     width: 15%;
