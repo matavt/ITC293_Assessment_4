@@ -21,7 +21,7 @@ function compute()
 
     document.getElementById("result").innerHTML="If you borrow <mark>$"+principal+"</mark>,\<br\>at an interest rate of <mark>"+rate+
         "%</mark>\<br\>You will repay <mark>$"+repayments+"</mark> each month"+"\<br\>You will repay your loan in the year <mark>"+year+
-        "</mark>\<br\>Your total interest paid will be <mark>$"+totalInterest+"</mark>"
+        "</mark>\<br\>Your total interest paid will be <mark>$"+totalInterest+"</mark>";
     return;
 }
 

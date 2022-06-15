@@ -1,8 +1,15 @@
-body {background-color:black;font-family:arial;color:white}
-h1{color:grey;font-family:verdana}
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-color:black;
+    color:white
+}
+h1{
+    color:grey;
+}
 .maindiv{
     background-color:white; 
-    font:optional; 
     color:black; 
     width: 500px; 
     padding: 20px; 

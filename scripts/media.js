@@ -5,7 +5,7 @@ function displayImage(imgTarget){
     gallery.forEach(thumbnail => {
         thumbnail.style.display = "none";
     });
-};
+}
 
 function hideImage(imgTarget){
     var image = document.getElementById(imgTarget);
@@ -14,4 +14,4 @@ function hideImage(imgTarget){
     gallery.forEach(thumbnail => {
         thumbnail.style.display = "inline";
     });
-};
+}

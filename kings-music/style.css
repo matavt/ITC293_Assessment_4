@@ -11,7 +11,7 @@ body{
 form{
     background-color: blanchedalmond;
     text-align: left;
-    display: inline block;
+    display: inline-block;
     width: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -31,4 +31,13 @@ form{
 
 #fname, #lname, #email, #comments{
     background-color:azure;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+.footer_text{
+    font-size: 12px;
+    padding-left: 10px;
+    text-align: center;
 }

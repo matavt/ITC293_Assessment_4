@@ -1,65 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
     <title>Kings Music Signup</title>
-    <head>
     <link rel="stylesheet" href="./style.css">
-    </head>
-    <body onload="welcome()">
-        <div class="formWrap">
-            <form action="http://csusap.csu.edu.au/cgi-bin/echo_form" method="post" id="signup">
-                <div id="formTitle">Kings Music Store - Newsletter Signup</div><hr>
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" maxlength="60"><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname" maxlength="60">
-                <br>
-                <label for="email">Email Address:</label><br>
-                <input type="text" id="email" name="email" maxlength="60">
-                <br>
-                Age
-                <br>
-                <input type="radio" id="12-25" name="age_range" value="range1">
-                <label for="12-25">12-25</label><br>
-                <input type="radio" id="26-35" name="age_range" value="range2">
-                <label for="26-35">26-35</label><br>
-                <input type="radio" id="36-45" name="age_range" value="range3">
-                <label for="36-45">36-45</label><br>
-                <input type="radio" id="46-55" name="age_range" value="range4">
-                <label for="46-55">46-55</label><br>
-                <input type="radio" id="56+" name="age_range" value="range5">
-                <label for="56+">56+</label><br>
-                <br>
-                Music Tastes
-                <br>
-                <input type="checkbox" id="metal" name="metal" value="metal">
-                <label for="metal">Heavy Metal</label><br>
-                <input type="checkbox" id="country" name="country" value="country">
-                <label for="country">Country and Western</label><br>
-                <input type="checkbox" id="rock" name="rock" value="rock">
-                <label for="rock">Rock & Roll</label><br>
-                <input type="checkbox" id="pop" name="pop" value="pop">
-                <label for="pop">Pop</label><br>
-                <input type="checkbox" id="folk" name="folk" value="folk">
-                <label for="folk">Folk</label><br>
-                <input type="checkbox" id="blues" name="blues" value="blues">
-                <label for="blues">Blues</label><br>
-                <input type="checkbox" id="jazz" name="jazz" value="jazz">
-                <label for="jazz">Jazz</label><br>
-                <input type="checkbox" id="disco" name="disco" value="disco">
-                <label for="disco">Disco</label><br>
-                <input type="checkbox" id="opera" name="opera" value="opera">
-                <label for="opera">Opera</label>
-                <label for="comments">Let us know if there is any other music you're interested in.</label>
-                <textarea name="comments" id="comments" placeholder="Enter your comments here" 
-                cols="60" rows="3"></textarea>
-                <br>
-                <button type = "submit">submit</button>
-                <button type = "reset">reset</button>
-            </form>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matthew Semmens">
+    <meta name="description" content="ITC293 Asssignment 2">
+</head>
+<body onload="welcome()">
+    <div class="formWrap">
+        <form action="http://csusap.csu.edu.au/cgi-bin/echo_form" method="post" id="signup">
+            <div id="formTitle">Kings Music Store - Newsletter Signup</div><hr>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" maxlength="60"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" maxlength="60">
+            <br>
+            <label for="email">Email Address:</label><br>
+            <input type="text" id="email" name="email" maxlength="60">
+            <br>
+            Age
+            <br>
+            <input type="radio" id="12-25" name="age_range" value="range1">
+            <label for="12-25">12-25</label><br>
+            <input type="radio" id="26-35" name="age_range" value="range2">
+            <label for="26-35">26-35</label><br>
+            <input type="radio" id="36-45" name="age_range" value="range3">
+            <label for="36-45">36-45</label><br>
+            <input type="radio" id="46-55" name="age_range" value="range4">
+            <label for="46-55">46-55</label><br>
+            <input type="radio" id="56+" name="age_range" value="range5">
+            <label for="56+">56+</label><br>
+            <br>
+            Music Tastes
+            <br>
+            <input type="checkbox" id="metal" name="metal" value="metal">
+            <label for="metal">Heavy Metal</label><br>
+            <input type="checkbox" id="country" name="country" value="country">
+            <label for="country">Country and Western</label><br>
+            <input type="checkbox" id="rock" name="rock" value="rock">
+            <label for="rock">Rock & Roll</label><br>
+            <input type="checkbox" id="pop" name="pop" value="pop">
+            <label for="pop">Pop</label><br>
+            <input type="checkbox" id="folk" name="folk" value="folk">
+            <label for="folk">Folk</label><br>
+            <input type="checkbox" id="blues" name="blues" value="blues">
+            <label for="blues">Blues</label><br>
+            <input type="checkbox" id="jazz" name="jazz" value="jazz">
+            <label for="jazz">Jazz</label><br>
+            <input type="checkbox" id="disco" name="disco" value="disco">
+            <label for="disco">Disco</label><br>
+            <input type="checkbox" id="opera" name="opera" value="opera">
+            <label for="opera">Opera</label>
+            <label for="comments">Let us know if there is any other music you're interested in.</label>
+            <textarea name="comments" id="comments" placeholder="Enter your comments here" 
+            cols="60" rows="3"></textarea>
+            <br>
+            <button type = "submit">submit</button>
+            <button type = "reset">reset</button>
+        </form>
 
-        </div>
-        <script src="./script.js"></script>
-    </body>
+    </div>
+    <script src="./script.js"></script>
     <footer>
-</footer>
+        <span class="footer_text">&copy; Matthew Semmens all content produced by Matthew Semmens or used
+            with permission</span>
+    </footer>
+</body>
 </html>
