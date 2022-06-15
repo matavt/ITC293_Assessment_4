@@ -10,24 +10,38 @@ form.addEventListener("submit", (event) => {
 
 //check if name fields are empty display alert
 function checkName(){
-    var firstName = document.forms["signup"]["fname"].value;
-    var lastName = document.forms["signup"]["lname"].value;
-    var email = document.forms["signup"]["email"].value;
+    var firstName = document.forms["signup"]["fname"];
+    var lastName = document.forms["signup"]["lname"];
+    var email = document.forms["signup"]["email"];
+    var alertString = "";
 
-    if(firstName == ""){
-        alert("Please enter your first name");
-        return false;
+    if(firstName.value == ""){
+        alertString += "Please enter your first name.\n";
+        firstName.style.borderColor = "red";
+    } else {
+        firstName.style.borderColor = "black";        
     }
-    if(lastName == ""){
-        alert("Please enter your last name");
-        return false;
+
+    if(lastName.value == ""){
+        alertString += "Please enter your last name.\n";
+        lastName.style.borderColor = "red";
+    } else {
+        lastName.style.borderColor = "black";
     }
-    if(email == ""){
-        alert("please enter your email address");
-        return false;
+
+    if(email.value == ""){
+        alertString += "Please enter your email.\n";
+        email.style.borderColor = "red";
+    } else {
+        email.style.borderColor = "black";
     }
-    
-    return true;
+
+    if(alertString != ""){
+        alert(alertString);
+        return false;
+    } else{    
+        return true;
+    }
 }
 
 function welcome(){
