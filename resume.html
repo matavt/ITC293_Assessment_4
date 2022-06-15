@@ -1,121 +1,138 @@
 <!--
-    ITC293 Introduction to the Web
-    Matthew Semmens
-    9/04/2022
+ITC293 Introduction to the Web
+Matthew Semmens
+9/04/2022
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="icon" type="image/x-icon" href = "./images/matavt-logos.jpeg">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/resume.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Matthew Semmens">
+  <meta name="description" content="ITC293 Asssignment 2">
+  <title>
+    Resume
+  </title>
+  <link rel="icon" type="image/x-icon" href = "./images/matavt-logos.jpeg">
 </head>
 <body>
-    <div id="nav_bar">
-        <div id="left_nav_box">
-            <img src="./images/matavt-logos.jpeg" alt="logo" height=100>
-        </div>
-        <div id="right_nav_box">
-            <h1 id="banner_text">Matthew's  Resume</h1>
-            <nav>
-                <button type="button" class="nav_button" onclick="location.href='./index.html'">Home</button>
-                <button type="button" class="nav_button" onclick="location.href='./about_me.html'">AboutMe</button>
-                <button type="button" class="nav_button" disabled onclick="location.href='./resume.html'">Resume</button>
-                <button type="button" class="nav_button" onclick="location.href='./skills.html'">Skills</button>
-            </nav>
-        </div>
+  <div class="title">
+    <div class="title_left">
+      <img src="./images/matavt-logos.jpeg" alt="logo" height=100>
     </div>
-    <main id="content_body">
-        <h3>About Me</h3>
-        <p>I&#39;m a long term Northern Territory resident with extensive experience across all aspects 
-            of the events industry and growing experience in IT systems management. I&#39;ve got experience in marketing, contract negation, submitting tenders and working to budgets. 
-            My passion within the industry is taking advantage of new technology to enhance the event experience and delivering the desired message. I also hold licenses and experience in operating common plant.</p>
-        <br>
-        <h2>Previous experience</h2>
-        <br>
-        <h3>AV and Communications Support Analyst</h3>
-        <div class="exp">  
-
-            <img src="images/cdu.jpg" alt="CDU Insigner">
-            <h4>Charles Darwin University</h4><h5 class="light">2015 - Present</h5>
-            <p class = "bold" style="padding: 0px;">
-                The Technical Support Officer is required to work in a rapid response support for teaching staff in teaching spaces and support for events and functions.
-                Provide tier 2 technical support for the correct and efficient functioning of PC and non-PC devices connected to the CDU Network. 
-                Technologies may include computing devices, video conference equipment, audio visual equipment, smart phones, IP phones and mobile phones.
-            </p>
-        </div>
-        <br>
-        <h3>Musician</h3>
-        <div class="exp">
-
-            <img src="images/army.jpg" alt="Army Insigner">
-            <h4>Australian Army</h4><h5>Nov 1997- Present</h5>
-            <p style="padding: 0px;">    
-                Musical performance on Saxophone and Clarinet, including jazz, rock, concert and marching band.
-                Setup and operation of professional live sound production systems. Setup of lighting systems. Setup and operation of recording.
-                Involved in the performances for Army and Government Ceremonial, charity events and general community engagement.
-            </p>
-        </div>
-        <br>
-        <h3>Corporate Events and IS Manager</h3>
-        <div class="exp">
-
-            <h4>Top End Sounds pty ltd</h4><h5>Oct 2004- May 2015</h5>
-            <p style="padding: 0px;">
-                My primary responsibility in this role is to manage all corporate events. This consists of submission of designs and budgets to clients, finalising contracts,
-                liaising with venues and caterers and crew management to ensure the successful delivery of events.
-                Im also directly responsible information technology implemented across the company and used in delivering events to clients.
-            </p>
-        </div>
-        <br>
-        <h3>Store Manager</h3>
-        <div class="exp">
-
-            <img src="images/woolworths.jpg" alt="Woolworths Insigner">
-            <h4>Woolworths Limited</h4><h5>July 2002-  Oct 2004</h5>
-            <p style="padding: 0px;">   
-                I worked within the Dick Smith and Tandy Electronics brand as a Store Manager.
-                I was responsible for maintaining the standards of customer services as expected for the <span class="strike">Dick Smith</span> and Tandy Electronics brands.
-            </p>
-        </div>
-
-        <br>
-        <h3>Certifications</h3>
-        <table>
-            <tr>
-                <th>certification</th><th>company</th><th>date issued</th>
-            </tr>
-            <tr>
-                <td>Foundation of Crestron Programming</td><td>Crestron Electronics</td><td>September 2021</td>
-            </tr>
-            <tr>
-                <td>Crestron Core Track</td><td>Crestron Electronics</td><td>May 2021</td>
-            </tr>
-            <tr>
-                <td>Q-Sys Control 101</td><td>QSC</td><td>May 2021</td>
-            </tr>
-            <tr>
-                <td>Becoming a python developer</td><td>LinkedIn</td><td>April 2019</td>
-            </tr>
-            <tr>
-                <td>SQL essential training</td><td>LinkedIn</td><td>Jan 2021</td>
-            </tr>
-            <tr>
-                <td>Introducing Maven</td><td>LinkedIn</td><td>Nov 2021</td>
-            </tr>
-        </table>
-        <br>
-        <hr>
-    </main>
-    <footer>
-        <span class="footer_text">&copy; Matthew Semmens all content produced by Matthew Semmens or used
-             with permission</span>
-        <a href="tel:0444123456" class="footLink">phone:0444 123 456</a> 
-        <a href="mailto:webmaster@matavt.net" class="footLink">email:Matthew Semmens</a> 
-        <a href="https://www.linkedin.com/in/matthew-semmens-36495244/" class="footLink">Matthew Semmens Linkedin</a>
-    </footer>
+    <div class="title_right">
+      <h1 class="h1_title">Matthew Semmens Resume</h1>
+    </div>
+  </div>
+  <div class="content">
+    <div class="nav_bar">
+      <nav>
+        <ul>
+          <li><a href="./index.html" class="button">Home</a></li>
+        </ul>
+        <ul>
+          <li><a href="./about_me.html" class="button">About Me</a></li>
+        </ul>
+        <ul>
+          <li><a href="./resume.html" class="button" style="opacity: 0.5;">Resume</a></li>
+        </ul>
+        <ul>
+          <li><a href="./skills.html" class="button">Skills</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main_content">
+        <main>
+            <h3>About Me</h3>
+            <p>I&#39;m a long term Northern Territory resident with extensive experience across all aspects 
+                of the events industry and growing experience in IT systems management. I&#39;ve got experience in marketing, contract negation, submitting tenders and working to budgets. 
+                My passion within the industry is taking advantage of new technology to enhance the event experience and delivering the desired message. I also hold licenses and experience in operating common plant.</p>
+            <br>
+            <h2>Previous experience</h2>
+            <br>
+            <h3>AV and Communications Support Analyst</h3>
+            <div class="exp">  
+    
+                <img src="images/cdu.jpg" alt="CDU Insigner">
+                <h4>Charles Darwin University</h4><h5 class="light">2015 - Present</h5>
+                <p class = "bold" style="padding: 0px;">
+                    The Technical Support Officer is required to work in a rapid response support for teaching staff in teaching spaces and support for events and functions.
+                    Provide tier 2 technical support for the correct and efficient functioning of PC and non-PC devices connected to the CDU Network. 
+                    Technologies may include computing devices, video conference equipment, audio visual equipment, smart phones, IP phones and mobile phones.
+                </p>
+            </div>
+            <br>
+            <h3>Musician</h3>
+            <div class="exp">
+    
+                <img src="images/army.jpg" alt="Army Insigner">
+                <h4>Australian Army</h4><h5>Nov 1997- Present</h5>
+                <p style="padding: 0px;">    
+                    Musical performance on Saxophone and Clarinet, including jazz, rock, concert and marching band.
+                    Setup and operation of professional live sound production systems. Setup of lighting systems. Setup and operation of recording.
+                    Involved in the performances for Army and Government Ceremonial, charity events and general community engagement.
+                </p>
+            </div>
+            <br>
+            <h3>Corporate Events and IS Manager</h3>
+            <div class="exp">
+    
+                <h4>Top End Sounds pty ltd</h4><h5>Oct 2004- May 2015</h5>
+                <p style="padding: 0px;">
+                    My primary responsibility in this role is to manage all corporate events. This consists of submission of designs and budgets to clients, finalising contracts,
+                    liaising with venues and caterers and crew management to ensure the successful delivery of events.
+                    Im also directly responsible information technology implemented across the company and used in delivering events to clients.
+                </p>
+            </div>
+            <br>
+            <h3>Store Manager</h3>
+            <div class="exp">
+    
+                <img src="images/woolworths.jpg" alt="Woolworths Insigner">
+                <h4>Woolworths Limited</h4><h5>July 2002-  Oct 2004</h5>
+                <p style="padding: 0px;">   
+                    I worked within the Dick Smith and Tandy Electronics brand as a Store Manager.
+                    I was responsible for maintaining the standards of customer services as expected for the <span class="strike">Dick Smith</span> and Tandy Electronics brands.
+                </p>
+            </div>
+    
+            <br>
+            <h3>Certifications</h3>
+            <table>
+                <tr>
+                    <th>certification</th><th>company</th><th>date issued</th>
+                </tr>
+                <tr>
+                    <td>Foundation of Crestron Programming</td><td>Crestron Electronics</td><td>September 2021</td>
+                </tr>
+                <tr>
+                    <td>Crestron Core Track</td><td>Crestron Electronics</td><td>May 2021</td>
+                </tr>
+                <tr>
+                    <td>Q-Sys Control 101</td><td>QSC</td><td>May 2021</td>
+                </tr>
+                <tr>
+                    <td>Becoming a python developer</td><td>LinkedIn</td><td>April 2019</td>
+                </tr>
+                <tr>
+                    <td>SQL essential training</td><td>LinkedIn</td><td>Jan 2021</td>
+                </tr>
+                <tr>
+                    <td>Introducing Maven</td><td>LinkedIn</td><td>Nov 2021</td>
+                </tr>
+            </table>
+            <br>
+            <hr>
+        </main>
+    </div>
+  </div>
+  <footer>
+    <span class="footer_text">&copy; Matthew Semmens all content produced by Matthew Semmens or used
+        with permission</span>
+    <a href="tel:0444123456" class="footLink">phone:0444 123 456</a>
+    <a href="mailto:webmaster@matavt.net" class="footLink">email:Matthew Semmens</a>
+    <a href="https://www.linkedin.com/in/matthew-semmens-36495244/" class="footLink">Matthew Semmens Linkedin</a>
+  </footer>
 </body>
-</html>

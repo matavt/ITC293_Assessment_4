@@ -3,155 +3,121 @@
     Matthew Semmens
     9/04/2022
 */
-
 *{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 0px;
-    margin: 0px;    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
 }
-
 html{
     display: flex;
     justify-content: center;
 }
-
 body{
     align-items: center;
     background-color: #2E4057;
-    margin-top: 50px;
+    margin-top: 1%;
+    width: 90%;
 }
 
-/*This section relates to the Sticked nav bar and banner title*/
-#nav_bar{
+/*Title Bar Style*/
+.title{
     position: sticky;
-    top:0%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top:0%;
     background-color: #F7BF4F;
-    width: 575px;
     height: 100px;
 }
-#left_nav_box{
-    float: left;
+.title_left{
+    order: 1;
+    flex-grow: 0;
     width: 100px;
-    height: 100px;
 }
-#right_nav_box{
-    float: right;
-    width: 475px;
-    height: 100px;
-}
-
-#banner_text{
-    top: 0; 
-    height: 50px;
+.title_right{
+    order: 2;
+    flex-grow: 1;
     text-align: center;
+}
+h1.h1_title{
     font-style: italic;
+    margin-top: 25px;
+    margin-right: 100px;
+    font-size: xx-large;
 }
-
-button.nav_button {
+/*Content + nav bar*/
+.content{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #F4A259;
+}
+/*nav bar to to the left*/
+.nav_bar{
+    order: 1;
+    flex-grow: 0;
+    width: 100px;
+    min-width: 100px;
+}
+nav{
+    position: sticky;
+    margin-left: 0;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    margin-bottom: 1px solid #0000;
+}
+.button {
+    display: block;
     background-color: aquamarine;
-    border: none;
+    border:none;
     color: black;
-    padding: 3px 32px;
+    padding: 10px 0px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 3px;
-    width: 24%;
+    font-size: 14px;
+    width: 100%;
 }
-button.nav_button:hover {
+.button:hover {
     background-color: azure;
 }
-button.nav_button:disabled {
-    opacity: 0.5;   
+.button:active {
+    opacity: 0.5;
+    background-color: #2E4057;
+}
+/*main content window*/
+.main_content{
+    order:2;
+    flex-grow: 1;
+    padding: 10px;
+}
+aside{
+    float: right;
+    width: 25%;
+}
+img.sidebar{
+    width:95%;
+}
+img{
+    width: 90%;
+}
+p{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-h2,h3,h4{
-    background-color: #F4A259;
-    width: 550px;
-    padding-left: 25px;
-}
-
-table{
-    background-color: #F7BF4F;
-    width: 575px;
-}
-table, th, td {
-    border: 1px solid black;
-}
-
-.exp{
-    background-color: #F7BF4F;
-    width: 550px;
-    padding-left: 25px;
-}
-
-
-/*Body*/
-.content_body {
-    width: 575px;
-    top: 100px;
-    height:100vh;
-    padding: 25px;
-    background-color: #F7BF4F;
-}
-
-p {
-    text-align: left;
-    width: 525px;
-    padding: 25px;
-    background-color: #F7BF4F;
-}
-
-#content_parts{
-    text-align: center;
-    width: 475px;
-}
-
-a{
-    display:inline;
-}
-a:link{
-    color:#5E7087;
-}
-a:visited{
-    color: #5E7087;
-}
-a:hover{
-    background-color: #5E7087;
-    color: #E8EEF2;
-}
-
-
-figure{
-    width: 575px;
-    align-items: center;
-    background-color: #F7BF4F;
-}
-
-figcaption{
-    background-color: antiquewhite;
-    text-align: right;
-    padding-right: 50px;
-    text-decoration: underline;
-}
-
+/*footer content*/
 footer{
-    width: 575px;
     background-color:antiquewhite;
     padding-bottom: 10px;
 }
-
 .footer_text{
     font-size: 12px;
     padding-left: 10px;
 }
-
  /*footer links*/
 a.footLink{
     display: block;
     padding-left: 20px;
-    padding-right: 20px;
 }
 a.footLink:link{
     color: #F4A259;
@@ -162,24 +128,4 @@ a.footLink:visited{
 a.footLink:hover{
     background-color: #5E7087;
     color: #E8EEF2;
-}
-
-ul{
-    list-style-type:none;
-    background-color:#F7BF4F;
-    padding-left: 25px;
-    padding-bottom: 25px;
-}
-
-/*Print friendly bit*/
-@media print {
-    body {
-        margin: 0;
-        color: #000;
-        background-color: #fff;
-        font-size: 50%;
-    }
-    header, footer, nav, img {
-        display: none;
-    }     
 }

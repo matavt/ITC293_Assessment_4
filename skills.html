@@ -1,91 +1,104 @@
 <!--
-    ITC293 Introduction to the Web
-    Matthew Semmens
-    9/04/2022
+ITC293 Introduction to the Web
+Matthew Semmens
+9/04/2022
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills</title>
-    <link rel="icon" type="image/x-icon" href = "./images/matavt-logos.jpeg">
+  <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Matthew Semmens">
+  <meta name="description" content="ITC293 Asssignment 2">
+  <title>
+    Matthew Semmens Portfolio
+  </title>
+  <link rel="icon" type="image/x-icon" href = "./images/matavt-logos.jpeg">
 </head>
 <body>
-    <div class="nav_bar">
-        <div id="left_nav_box">
-            <img src="./images/matavt-logos.jpeg" alt="logo" height=100>
-        </div>
-        <div id="right_nav_box">
-            <h1 id="banner_text">My Skills</h1>
-            <nav>
-                <button type="button" class="nav_button" onclick="location.href='./index.html'">Home</button>
-                <button type="button" class="nav_button" onclick="location.href='./about_me.html'">AboutMe</button>
-                <button type="button" class="nav_button" onclick="location.href='./resume.html'">Resume</button>
-                <button type="button" class="nav_button" disabled onclick="location.href='./skills.html'">Skills</button>
-            </nav>
-        </div>
+  <div class="title">
+    <div class="title_left">
+      <img src="./images/matavt-logos.jpeg" alt="logo" height=100>
     </div>
-    <main>
-        
-        <p> This page contains a list of skills and some examples of those skill put use.
-            Some of those are in Web Development and some in other development skills.
-        </p>
-        <p>I've been developing webskills over a number of year. These skill have involved
-            the Cpanel adminsitration of a number of websites including static web pages,
-            Wordpress sites, webforums, and sharepoint sites running on IIS.
-        </p>    
-        <p>While my web
-            development skills are still being worked on I have knowledge of DNS configuration
-            in web nameservers related to managing websites.
-        </p>
-        <h2>My skills include</h2>
+    <div class="title_right">
+      <h1 class="h1_title">Matthew Semmens Portfolio</h1>
+    </div>
+  </div>
+  <div class="content">
+    <div class="nav_bar">
+      <nav>
         <ul>
-            <li>DNS configuration</li>
-            <li>mySQL</li>
-            <li>Basic PHP</li>
-            <li>HTML</li>
-            <Li>CSS</Li>
-            <li>JavaScript</li>
-            <li>basic REACT</li>
+          <li><a href="./index.html" class="button">Home</a></li>
         </ul>
-        <h3>Examples of these skills<br><br></h3>
-        <h4>HTML with JS</h4>
-        <p>
-            The first demostration of skills is contact form utilising JavaScript to collect client
-            information for Kings Music. The contact form collects client information validates
-            and submits it to site with a post request.
-            <a href="./kings-music/index.html" target="_blank">Kings Music Contact From</a>
-        </p>
-        <h4>HTML with JS</h4>
-        <p>
-            This second demostration of skills is a basic interest calculation form. It was built
-            as part of a short course to learn continuous development and integration utilising the
-            IBM cloud computing platform.
-            <a href="./Simple-Interest-Calculator/index.html" target="_blank">Simple Interest Calculator</a>
-        </p>
-        <h4>General Development</h4>
-        <p id="devReturn">
-            The following page includes an outline of my develpoment skills.
-            <a href="./development.html">Development Skills</a>
-        </p>
-        <h4>HTML with JS and images</h4>
-        <p id="mediaReturn">
-            This pages includes more example of JavaScript usage as well as media preperation for the
-            web.
-            <a href="./media.html">Media Page</a>
-        </p>
-        
-
-    </main>
-    <footer>
-        <span class="footer_text">&copy; Matthew Semmens all content produced by Matthew Semmens or used
-             with permission</span>
-        <a href="tel:0444123456" class="footLink">phone:0444 123 456</a> 
-        <a href="mailto:webmaster@matavt.net" class="footLink">email:Matthew Semmens</a> 
-        <a href="https://www.linkedin.com/in/matthew-semmens-36495244/" class="footLink">Matthew Semmens Linkedin</a>
-    </footer>
+        <ul>
+          <li><a href="./about_me.html" class="button">About Me</a></li>
+        </ul>
+        <ul>
+          <li><a href="./resume.html" class="button">Resume</a></li>
+        </ul>
+        <ul>
+          <li><a href="./skills.html" class="button" style="opacity: 0.5;">Skills</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main_content" style="background-color: beige;">
+        <main>        
+            <p> This page contains a list of skills and some examples of those skill put use.
+                Some of those are in Web Development and some in other development skills.
+            </p>
+            <p>I've been developing webskills over a number of year. These skill have involved
+                the Cpanel adminsitration of a number of websites including static web pages,
+                Wordpress sites, webforums, and sharepoint sites running on IIS.
+            </p>    
+            <p>While my web
+                development skills are still being worked on I have knowledge of DNS configuration
+                in web nameservers related to managing websites.
+            </p>
+            <h2>My skills include</h2>
+            <ul>
+                <li>DNS configuration</li>
+                <li>mySQL</li>
+                <li>Basic PHP</li>
+                <li>HTML</li>
+                <Li>CSS</Li>
+                <li>JavaScript</li>
+                <li>basic REACT</li>
+            </ul>
+            <h3>Examples of these skills<br><br></h3>
+            <h4>HTML with JS</h4>
+            <p>
+                The first demostration of skills is contact form utilising JavaScript to collect client
+                information for Kings Music. The contact form collects client information validates
+                and submits it to site with a post request.
+                <a href="./kings-music/index.html" target="_blank">Kings Music Contact From</a>
+            </p>
+            <h4>HTML with JS</h4>
+            <p>
+                This second demostration of skills is a basic interest calculation form. It was built
+                as part of a short course to learn continuous development and integration utilising the
+                IBM cloud computing platform.
+                <a href="./Simple-Interest-Calculator/index.html" target="_blank">Simple Interest Calculator</a>
+            </p>
+            <h4>General Development</h4>
+            <p id="dev_return">
+                The following page includes an outline of my develpoment skills.
+                <a href="./development.html">Development Skills</a>
+            </p>
+            <h4>HTML with JS and images</h4>
+            <p id="media_return">
+                This pages includes more example of JavaScript usage as well as media preperation for the
+                web.
+                <a href="./media.html">Media Page</a>
+            </p>          
+        </main>
+    </div>
+  </div>
+  <footer>
+    <span class="footer_text">&copy; Matthew Semmens all content produced by Matthew Semmens or used
+        with permission</span>
+    <a href="tel:0444123456" class="footLink">phone:0444 123 456</a>
+    <a href="mailto:webmaster@matavt.net" class="footLink">email:Matthew Semmens</a>
+    <a href="https://www.linkedin.com/in/matthew-semmens-36495244/" class="footLink">Matthew Semmens Linkedin</a>
+  </footer>
 </body>
-</html>

@@ -1,7 +1,8 @@
 #image_gallery{
-    width: 575px;
+    width: 90%;
 }
 img.gallery{
+    width: 15%;
     margin: 10px;   
 }
 img.gallery:hover{
@@ -10,9 +11,10 @@ img.gallery:hover{
 }
 
 img.galleryPopup{
-    max-width: 575px;
+    max-width: 90%;
     animation-name: zoom;
     animation-duration: 0.5s;
+    display: none;
 }
  
 @keyframes zoom {

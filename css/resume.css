@@ -1,0 +1,18 @@
+table{
+    background-color: #F7BF4F;
+    width: 575px;
+}
+table, th, td {
+    border: 1px solid black;
+}
+
+.exp{
+    background-color: #F7BF4F;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-right: 25px;
+}
+img{
+    width: auto;
+}

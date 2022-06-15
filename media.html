@@ -1,83 +1,88 @@
 <!--
-    ITC293 Introduction to the Web
-    Matthew Semmens
-    9/04/2022
+ITC293 Introduction to the Web
+Matthew Semmens
+9/04/2022
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/media.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Matthew Semmens">
-    <meta name="description" content="ITC293 Asssignment 2">
-    <title>
-        Media
-    </title>
-    <link rel="icon" type="image/x-icon" href = "./images/matavt-logos.jpeg">
-    <style>
-        .galleryPopup{
-            display:none
-        }
-    </style>
-
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Matthew Semmens">
+  <meta name="description" content="ITC293 Asssignment 2">
+  <title>
+    Matthew Semmens Portfolio
+  </title>
+  <link rel="icon" type="image/x-icon" href = "./images/matavt-logos.jpeg">
 </head>
-
 <body>
-    <script src="./scripts/media.js"></script>   
-    <div id="nav_bar">
-        <div id="left_nav_box">
-            <img src="./images/matavt-logos.jpeg" alt="logo" height=100>
-        </div>
-        <div id="right_nav_box">
-            <h1 id="banner_text">Media</h1>
-            <nav>
-                <button type="button" class="nav_button" onclick="location.href='./index.html'">Home</button>
-                <button type="button" class="nav_button" onclick="location.href='./about_me.html'">AboutMe</button>
-                <button type="button" class="nav_button" onclick="location.href='./resume.html'">Resume</button>
-                <button type="button" class="nav_button" onclick="location.href='./skills.html#mediaReturn'">Skills</button>
-            </nav>
-        </div>
+  <script src="./scripts/media.js"></script>   
+  <div class="title">
+    <div class="title_left">
+      <img src="./images/matavt-logos.jpeg" alt="logo" height=100>
     </div>
-    <main>
-        <h3>
-            Gallery of images.
-        </h3>
-        <div id="image_gallery">
-            <img src="./images/image001thumb.jpg" onclick="displayImage('img001')" class="gallery">
-            <img src="./images/image001.jpg" onclick="hideImage('img001')" class="galleryPopup" id="img001">
-            <img src="./images/image002thumb.jpg" onclick="displayImage('img002')" class="gallery">
-            <img src="./images/image002.jpg" onclick="hideImage('img002')" class="galleryPopup" id="img002">
-            <img src="./images/image003thumb.jpg" onclick="displayImage('img003')" class="gallery">
-            <img src="./images/image003.jpg" onclick="hideImage('img003')" class="galleryPopup" id="img003">
-            <img src="./images/image004thumb.jpg" onclick="displayImage('img004')" class="gallery">
-            <img src="./images/image004.jpg" onclick="hideImage('img004')" class="galleryPopup" id="img004">
-            <img src="./images/image005thumb.jpg" onclick="displayImage('img005')" class="gallery">
-            <img src="./images/image005.jpg" onclick="hideImage('img005')" class="galleryPopup" id="img005">
-            <img src="./images/image006thumb.jpg" onclick="displayImage('img006')" class="gallery">
-            <img src="./images/image006.jpg" onclick="hideImage('img006')" class="galleryPopup" id="img006">
-            <img src="./images/image007thumb.jpg" onclick="displayImage('img007')" class="gallery">
-            <img src="./images/image007.jpg" onclick="hideImage('img007')" class="galleryPopup" id="img007">
-            <img src="./images/image008thumb.jpg" onclick="displayImage('img008')" class="gallery">
-            <img src="./images/image008.jpg" onclick="hideImage('img008')" class="galleryPopup" id="img008">
-            <img src="./images/image009thumb.jpg" onclick="displayImage('img009')" class="gallery">
-            <img src="./images/image009.jpg" onclick="hideImage('img009')" class="galleryPopup" id="img009">     
-            <img src="./images/image010thumb.jpg" onclick="displayImage('img010')" class="gallery">
-            <img src="./images/image010.jpg" onclick="hideImage('img010')" class="galleryPopup" id="img010">
-            <img src="./images/image011thumb.jpg" onclick="displayImage('img011')" class="gallery">
-            <img src="./images/image011.jpg" onclick="hideImage('img011')" class="galleryPopup" id="img011">
-            <img src="./images/image012thumb.jpg" onclick="displayImage('img012')" class="gallery">
-            <img src="./images/image012.jpg" onclick="hideImage('img012')" class="galleryPopup" id="img012">
-        </div>    
-    </main>
-
-    <footer>
-        <span class="footer_text">&copy; Matthew Semmens all content produced by Matthew Semmens or used
-             with permission</span>
-        <a href="tel:0444123456" class="footLink">phone:0444 123 456</a> 
-        <a href="mailto:webmaster@matavt.net" class="footLink">email:Matthew Semmens</a> 
-        <a href="https://www.linkedin.com/in/matthew-semmens-36495244/" class="footLink">Matthew Semmens Linkedin</a>
-    </footer>
+    <div class="title_right">
+      <h1 class="h1_title">Matthew Semmens Portfolio</h1>
+    </div>
+  </div>
+  <div class="content">
+    <div class="nav_bar">
+      <nav>
+        <ul>
+          <li><a href="./index.html" class="button" style="opacity: 0.5;">Home</a></li>
+        </ul>
+        <ul>
+          <li><a href="./about_me.html" class="button">About Me</a></li>
+        </ul>
+        <ul>
+          <li><a href="./resume.html" class="button">Resume</a></li>
+        </ul>
+        <ul>
+          <li><a href="./skills.html#media_return" class="button">Skills</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main_content">
+        <main>
+            <h3>
+                Gallery of images.
+            </h3>
+            <div id="image_gallery">
+                <img src="./images/image001thumb.jpg" onclick="displayImage('img001')" class="gallery">
+                <img src="./images/image001.jpg" onclick="hideImage('img001')" class="galleryPopup" id="img001">
+                <img src="./images/image002thumb.jpg" onclick="displayImage('img002')" class="gallery">
+                <img src="./images/image002.jpg" onclick="hideImage('img002')" class="galleryPopup" id="img002">
+                <img src="./images/image003thumb.jpg" onclick="displayImage('img003')" class="gallery">
+                <img src="./images/image003.jpg" onclick="hideImage('img003')" class="galleryPopup" id="img003">
+                <img src="./images/image004thumb.jpg" onclick="displayImage('img004')" class="gallery">
+                <img src="./images/image004.jpg" onclick="hideImage('img004')" class="galleryPopup" id="img004">
+                <img src="./images/image005thumb.jpg" onclick="displayImage('img005')" class="gallery">
+                <img src="./images/image005.jpg" onclick="hideImage('img005')" class="galleryPopup" id="img005">
+                <img src="./images/image006thumb.jpg" onclick="displayImage('img006')" class="gallery">
+                <img src="./images/image006.jpg" onclick="hideImage('img006')" class="galleryPopup" id="img006">
+                <img src="./images/image007thumb.jpg" onclick="displayImage('img007')" class="gallery">
+                <img src="./images/image007.jpg" onclick="hideImage('img007')" class="galleryPopup" id="img007">
+                <img src="./images/image008thumb.jpg" onclick="displayImage('img008')" class="gallery">
+                <img src="./images/image008.jpg" onclick="hideImage('img008')" class="galleryPopup" id="img008">
+                <img src="./images/image009thumb.jpg" onclick="displayImage('img009')" class="gallery">
+                <img src="./images/image009.jpg" onclick="hideImage('img009')" class="galleryPopup" id="img009">     
+                <img src="./images/image010thumb.jpg" onclick="displayImage('img010')" class="gallery">
+                <img src="./images/image010.jpg" onclick="hideImage('img010')" class="galleryPopup" id="img010">
+                <img src="./images/image011thumb.jpg" onclick="displayImage('img011')" class="gallery">
+                <img src="./images/image011.jpg" onclick="hideImage('img011')" class="galleryPopup" id="img011">
+                <img src="./images/image012thumb.jpg" onclick="displayImage('img012')" class="gallery">
+                <img src="./images/image012.jpg" onclick="hideImage('img012')" class="galleryPopup" id="img012">
+            </div>    
+        </main>
+    </div>
+</div>
+<footer>
+  <span class="footer_text">&copy; Matthew Semmens all content produced by Matthew Semmens or used
+      with permission</span>
+  <a href="tel:0444123456" class="footLink">phone:0444 123 456</a>
+  <a href="mailto:webmaster@matavt.net" class="footLink">email:Matthew Semmens</a>
+  <a href="https://www.linkedin.com/in/matthew-semmens-36495244/" class="footLink">Matthew Semmens Linkedin</a>
+</footer>
 </body>
-</html>
